@@ -127,16 +127,32 @@ requirements.txt        bibliotecas usadas
 
 Usei Python 3.10.
 
+1. Clonar o repositório e entrar na pasta:
+
+```bash
+git clone https://github.com/josepharroyoh/hotel-cancellation-ml.git
+cd hotel-cancellation-ml
+```
+
+2. Criar e ativar um ambiente virtual:
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate          # Windows
 source .venv/bin/activate       # Linux ou Mac
-pip install -r requirements.txt
-jupyter notebook
 ```
 
-Depois é só abrir a pasta `notebooks` e rodar os notebooks em ordem, do 01
-ao 10. Os notebooks baixam a base deste repositório, então é preciso ter
-internet. O notebook 07 salva o modelo em `models/`, e os notebooks 09 e 10
-usam esse arquivo. Os notebooks 05 e 06 são os mais demorados (uns 15 e 20
-minutos).
+3. Instalar as bibliotecas:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Abrir os notebooks da pasta `notebooks` e rodar em ordem, do 01 ao 10.
+   Pode ser no VS Code ou no Jupyter (com o comando `jupyter notebook`),
+   escolhendo o ambiente `.venv` como kernel.
+
+Os notebooks baixam a base deste repositório, então é preciso estar conectado
+à internet. A ordem importa porque o notebook 07 salva o modelo em `models/`,
+e os notebooks 09 e 10 usam esse arquivo. Os notebooks 05 e 06 são os que
+mais demoram, porque treinam vários modelos com validação cruzada.
