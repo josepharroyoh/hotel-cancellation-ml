@@ -118,7 +118,7 @@ cada teste mostrou, as limitações e os próximos passos.
 data/raw/               base original
 notebooks/              notebooks 01 a 10
 src/preprocessing.py    carga, limpeza, variáveis novas, histórico e divisão treino/teste
-models/                 modelo final e configuração (gerados no notebook 07)
+models/                 modelo final e configuração (pasta criada ao rodar o notebook 07)
 reports/figures/        figuras deste README
 requirements.txt        bibliotecas usadas
 ```
